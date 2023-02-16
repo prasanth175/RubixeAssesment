@@ -226,6 +226,13 @@ body{
 
 }
 
+@media(max-width:360px){
+    .home-heading{
+        width: 100px;
+
+    }
+}
+
 @media (max-width:280px){
     .top-heading{
         font-size: 60px;
@@ -349,6 +356,7 @@ body{
         height: 60px;
     }
 }
+
 
 @media (max-width:280px){
     .service-heading{
