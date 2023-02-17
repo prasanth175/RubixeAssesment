@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
 body{
     margin: 0px;
     overflow-x: hidden;
 }
+
 
 .fixedBtn{
     display: block;
@@ -32,15 +35,16 @@ body{
     text-decoration: none;
 }
 /* NavBar Section */
-.nav-link{
-    font-size: 12px;
-    margin-right: 10px;
-}
 
 .navbar{
     font-family: 'Roboto Condensed', sans-serif;
     background-color: black !important;
     padding-bottom:  0px !important;
+    position: fixed !important;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
 }
 
 .navbar-left{
@@ -72,6 +76,9 @@ body{
 .nav-link{
     color: white !important;
     transition: all .4s linear;
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: 'Open Sans';
 }
 
 .nav-link:hover{
@@ -103,7 +110,6 @@ body{
 .Home{
     background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0,0,0,0.9)), url('./images/home-bg.jpg');
     width: 100vw;
-    /* background-image: url('./images/home-bg.jpg'); */
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -115,7 +121,6 @@ body{
     margin-left: 200px;
     margin-bottom: 100px;
     color: white;
-    /* border: 1px solid white; */
 }
 
 .home-top{
@@ -273,9 +278,15 @@ body{
     margin-right: 20px;
 }
 
+.service-txt{
+    font-family: 'Roboto';
+}
+
 
 .service-heading{
     margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-weight: bold;
 }
 
 .service-bottom{
@@ -400,6 +411,10 @@ body{
     margin-bottom: 20px;
 }
 
+.journey-txt{
+    font-family: 'Roboto';
+}
+
 @media (max-width: 1200px){
     .journey{
         margin-left: 100px;
@@ -484,7 +499,6 @@ body{
     padding-top: 20px;
     padding-bottom: 37px;
     position: relative;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -530,6 +544,7 @@ body{
     font-weight: bold;
 }
 
+
 .product-card-txt{
     font-family: 'Montserrat';
     font-weight: bold;
@@ -547,8 +562,11 @@ body{
 
 .card-image{
     position: relative;
+    height: 70px;
+    width: 70px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-
 .num-blue{
     color: rgb(29, 12, 94);
 }
@@ -595,6 +613,12 @@ body{
     }
 }
 
+@media (max-width:1350px){
+    .product-cards{
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width: 1200px){
     .product-content{
         margin-left: 100px;
@@ -606,7 +630,7 @@ body{
 
 }
 
-@media (max-width: 670px){
+@media (max-width: 667px){
     .odd{
         background-image: linear-gradient(to bottom, white,white, rgb(241, 240, 240));
         border-top-left-radius: 30px;
@@ -732,6 +756,10 @@ transform:rotate(90deg);
 .label-field{
     margin-top: 20px;
     font-weight: bold;
+}
+
+.radioInput{
+    cursor: pointer;
 }
 
 .gender-heading{
